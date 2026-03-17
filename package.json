@@ -1,0 +1,13 @@
+{
+  "name": "agargallis-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/ensure-inputs.cjs && vite build && node scripts/postbuild.cjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
