@@ -1,12 +1,11 @@
-﻿import "../styles.css";
-import {
+﻿import {
   renderBackdrop,
   renderHeader,
   renderHero,
   renderAboutSection,
   renderFooter,
   initAnimations,
-} from "../render";
+} from "../render.js";
 
 const app = document.querySelector("#app");
 

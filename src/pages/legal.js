@@ -1,11 +1,10 @@
-import "../styles.css";
 import {
   renderBackdrop,
   renderHeader,
   renderLegalPage,
   renderFooter,
   initAnimations,
-} from "../render";
+} from "../render.js";
 
 export const mountLegalPage = (pageKey) => {
   const app = document.querySelector("#app");

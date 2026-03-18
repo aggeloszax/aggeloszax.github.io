@@ -1,4 +1,4 @@
-﻿import { site } from "./data/site";
+﻿import { site } from "./data/site.js";
 
 const externalAttrs = 'target="_blank" rel="noreferrer"';
 const consentCookieName = "ag_cookie_consent";

@@ -1,5 +1,4 @@
-﻿import "../styles.css";
-import {
+﻿import {
   renderBackdrop,
   renderHeader,
   renderProjectsSection,
@@ -8,7 +7,7 @@ import {
   renderEducationSection,
   renderFooter,
   initAnimations,
-} from "../render";
+} from "../render.js";
 
 const app = document.querySelector("#app");
 
