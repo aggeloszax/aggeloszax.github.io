@@ -823,4 +823,5 @@ export const initAnimations = () => {
       true
     );
   }
+
 };
