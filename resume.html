@@ -20,6 +20,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      if (window.location.pathname === "/resume.html") {
+        window.history.replaceState(null, "", "/resume/");
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",

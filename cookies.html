@@ -26,6 +26,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      if (window.location.pathname === "/cookies.html") {
+        window.history.replaceState(null, "", "/cookies/");
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>

@@ -20,6 +20,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      if (window.location.pathname === "/contact.html") {
+        window.history.replaceState(null, "", "/contact/");
+      }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
