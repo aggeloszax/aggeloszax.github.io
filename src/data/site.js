@@ -2,14 +2,14 @@ export const site = {
   meta: {
     title: "Portfolio",
     description: "Aggelos Zaxariou",
-    ogImage: "/images/AG.png",
-    favicon: "/images/28.png",
+    ogImage: "/public/images/AG.png",
+    favicon: "/public/images/28.png",
     canonical: "/",
     themeColor: "#a91106",
     organization: {
       name: "Aggelos Zaxariou",
       url: "/",
-      logo: "/images/aaa.png",
+      logo: "/public/images/aaa.png",
       sameAs: [
         "https://gr.linkedin.com/in/antonis-gargallis-0713ba326",
         "https://github.com/agargallis",
@@ -18,23 +18,23 @@ export const site = {
     },
   },
   header: {
-    logo: "/images/AG.png",
+    logo: "/public/images/AG.png",
     home: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
     socials: [
       {
         label: "LinkedIn",
         href: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
-        icon: "/images/2397.png",
+        icon: "/public/images/2397.png",
       },
       {
         label: "GitHub",
         href: "https://github.com/aggeloszax",
-        icon: "/images/919847.png",
+        icon: "/public/images/919847.png",
       },
       {
         label: "Instagram",
         href: "https://www.instagram.com/_zaxariou",
-        icon: "/images/23.png",
+        icon: "/public/images/23.png",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const site = {
       },
     ],
     image: {
-      src: "/images/1000409226.png",
+      src: "/public/images/1000409226.png",
       alt: "Aggelos Zaxariou",
     },
   },
@@ -67,11 +67,11 @@ export const site = {
   projects: {
     title: "Projects",
     items: [
-      { title: "Soon!", href: "#", icon: "/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
     ],
   },
   certifications: {
@@ -112,9 +112,9 @@ export const site = {
     logos: [
       {
         href: "https://www.hau.gr/en-us/exams/language-certifications/michigan-language-assessment/ecpe",
-        src: "/images/16.jpg",
+        src: "/public/images/16.jpg",
       },
-      { href: "https://www.minedu.gov.gr/", src: "/images/17.png" },
+      { href: "https://www.minedu.gov.gr/", src: "/public/images/17.png" },
     ],
     items: [
       { name: "GREEK", level: "NATIVE SUFFICIENCY" },
@@ -129,7 +129,7 @@ export const site = {
 
     ],
     workImage: {
-      src: "/images/7.png",
+      src: "/public/images/7.png",
       alt: "Firm",
       href: "https://www.basketaki.com/",
     },
@@ -145,7 +145,7 @@ export const site = {
           "The Department of Statistics and Insurance Science at the University of Piraeus (UNIPI) is a prominent academic and research department specializing in statistics, actuarial science, insurance, and risk analysis. It provides a comprehensive curriculum that combines theoretical foundations with practical applications in probability, statistical inference, financial mathematics, insurance modeling, and decision-making under uncertainty, while fostering research activity and collaboration with academic and industry partners.",
         locationLabel: "Piraeus, Greece",
         locationHref: "https://shorturl.at/Gpy8K",
-        icon: { href: "https://www.stat.uoa.gr/front", src: "/images/18.png" },
+        icon: { href: "https://www.stat.uoa.gr/front", src: "/public/images/18.png" },
       },
       {
         school: "9th High School of Peristeri",
@@ -155,7 +155,7 @@ export const site = {
           "The 9th General Lyceum of Peristeri is a public upper secondary school located in the municipality of Peristeri, Athens. It provides a general education curriculum aimed at preparing students for university entrance, while also encouraging participation in cultural, scientific, and social activities.",
         locationLabel: "Peristeri, Greece",
         locationHref: "https://maps.app.goo.gl/yBFTra3XTEwgzG8n9",
-        icon: { href: "https://9lyk-perist.att.sch.gr/", src: "/images/19.png" },
+        icon: { href: "https://9lyk-perist.att.sch.gr/", src: "/public/images/19.png" },
       },
     ],
   },
@@ -166,21 +166,21 @@ export const site = {
       label: "Phone number",
       value: "6906270337",
       href: "tel:+30 6906270337",
-      icon: "/images/1082334-c91f3b92.png",
+      icon: "/public/images/1082334-c91f3b92.png",
     },
     email: {
       label: "Email",
       value: "aggelos2ker@gmail.com",
       href:
         "mailto:aggelos2ker@gmail.com",
-      icon: "/images/646135-a85e65c4.png",
+      icon: "/public/images/646135-a85e65c4.png",
     },
-    image: "/images/24.jpg",
+    image: "/public/images/24.jpg",
   },
   form: {
     title: "Get in Touch",
     action: "https://formspree.io/f/mojkprje",
-    illustration: "/images/24770152_101.png",
+    illustration: "/public/images/24770152_101.png",
     fields: {
       name: { label: "Name", placeholder: "Enter your name" },
       email: { label: "Email", placeholder: "Enter a valid email address" },
@@ -306,3 +306,4 @@ export const site = {
     legalLabel: "Legal",
   },
 };
+

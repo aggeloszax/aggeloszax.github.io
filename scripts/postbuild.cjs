@@ -1,4 +1,4 @@
-﻿const { mkdirSync, copyFileSync, existsSync } = require("fs");
+﻿const { mkdirSync, copyFileSync, existsSync, cpSync } = require("fs");
 const { resolve } = require("path");
 
 const dist = resolve(process.cwd(), "dist");
@@ -22,4 +22,12 @@ for (const { from, to } of copies) {
 
   mkdirSync(targetDir, { recursive: true });
   copyFileSync(source, target);
+}
+
+const imagesSource = resolve(dist, "images");
+const imagesTarget = resolve(dist, "public/images");
+
+if (existsSync(imagesSource)) {
+  mkdirSync(resolve(dist, "public"), { recursive: true });
+  cpSync(imagesSource, imagesTarget, { recursive: true });
 }
