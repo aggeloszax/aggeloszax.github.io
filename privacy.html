@@ -26,15 +26,66 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles.css" />
-    <script>
-      if (window.location.pathname === "/privacy.html") {
-        window.history.replaceState(null, "", "/privacy/");
-      }
-    </script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/pages/privacy.js"></script>
+    <div class="backdrop" aria-hidden="true">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="orb orb-three"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/" aria-label="Aggelos Zaxariou">
+          <img src="/public/images/AG.png" alt="Aggelos Zaxariou" />
+        </a>
+        <nav class="site-nav">
+          <a class="nav-highlight" href="/">Home</a>
+          <a class="nav-highlight" href="/resume/">Resume</a>
+          <a class="nav-highlight" href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section legal-page" id="top">
+        <div class="container legal-layout">
+          <div class="legal-hero-card">
+            <p class="about-eyebrow">Legal Pages</p>
+            <h1>Privacy Policy</h1>
+            <p class="legal-intro">Your privacy matters. Browsing this site does not require you to provide personal data.</p>
+            <div class="legal-meta">
+              <span>Last updated</span>
+              <strong>March 18, 2026</strong>
+            </div>
+            <div class="legal-nav" aria-label="Legal Pages">
+              <a class="legal-link" href="/cookies/" aria-label="Cookies"><span class="legal-link-icon">C</span><span>Cookies</span></a>
+              <a class="legal-link is-active" href="/privacy/" aria-label="Privacy"><span class="legal-link-icon">P</span><span>Privacy</span></a>
+              <a class="legal-link" href="/terms/" aria-label="Terms"><span class="legal-link-icon">T</span><span>Terms</span></a>
+            </div>
+          </div>
+          <div class="legal-grid">
+            <article class="card legal-card">
+              <h2>Personal data collected</h2>
+              <p>The only personal data collected through this site is the data you voluntarily provide in the contact form, such as your name, email address, and message.</p>
+            </article>
+            <article class="card legal-card">
+              <h2>Why it is collected</h2>
+              <p>That information is used only to review your request and reply to you. It is not sold, rented, or used for advertising.</p>
+            </article>
+            <article class="card legal-card">
+              <h2>Third-party processing</h2>
+              <p>Messages are delivered through the Formspree contact form service. By submitting the form, you understand that your message is transmitted to that service so it can reach me.</p>
+            </article>
+            <article class="card legal-card">
+              <h2>Copyright notice</h2>
+              <p>This portfolio website and its original content are owned by Aggelos Zaxariou and may not be copied or republished in misleading ways without permission.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
 

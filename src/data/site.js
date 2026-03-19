@@ -11,9 +11,9 @@ export const site = {
       url: "/",
       logo: "/public/images/aaa.png",
       sameAs: [
-        "https://gr.linkedin.com/in/antonis-gargallis-0713ba326",
-        "https://github.com/agargallis",
-        "https://www.instagram.com/agargallis",
+        "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
+        "https://github.com/aggeloszax",
+        "https://www.instagram.com/_zaxariou",
       ],
     },
   },
@@ -261,7 +261,7 @@ export const site = {
           {
             heading: "Copyright notice",
             body:
-              "This portfolio website is copyrighted by <a href=\"https://agargallis.github.io\" target=\"_blank\" rel=\"noreferrer\">agargallis.github.io</a> and Antonios Gargallis, the creator of this portfolio, and is presented with copyright wording adjusted to Aggelos Zaxariou information.",
+              "This portfolio website and its original content are owned by Aggelos Zaxariou and may not be copied or republished in misleading ways without permission.",
           },
         ],
       },
@@ -303,7 +303,8 @@ export const site = {
   footer: {
     text: "© 2026 Aggelos Zaxariou. All rights reserved.",
     href: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
-    creatorHref: "https://agargallis.github.io/resume/#projects",
+    creatorHref: "https://aggeloszax.github.io/",
+    creatorName: "Aggelos Zaxariou",
     legalLabel: "Legal",
   },
 };

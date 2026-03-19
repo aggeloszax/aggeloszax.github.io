@@ -631,7 +631,7 @@ export const renderFooter = () => {
     <div class="container footer-inner">
       <p class="footer-copy">
         <a href="${site.footer.href}" class="footer-link">${footerPrimaryText}</a>
-        <a href="${site.footer.creatorHref}" class="footer-link inline-link footer-credit-link" target="_blank" rel="noreferrer">Antonios Gargallis</a><span aria-hidden="true">.</span>
+        <a href="${site.footer.creatorHref}" class="footer-link inline-link footer-credit-link" target="_blank" rel="noreferrer">${site.footer.creatorName || site.meta.description}</a><span aria-hidden="true">.</span>
       </p>
       <div class="footer-legal" aria-label="${site.footer.legalLabel}">
         ${renderLegalLinks(site.legal.links)}
