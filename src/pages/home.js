@@ -1,3 +1,22 @@
-﻿import { bootApp } from "./app.js";
+﻿import {
+  renderBackdrop,
+  renderHeader,
+  renderHero,
+  renderAboutSection,
+  renderFooter,
+  initAnimations,
+} from "../render.js";
 
-bootApp();
+const app = document.querySelector("#app");
+
+app.innerHTML = `
+  ${renderBackdrop()}
+  ${renderHeader()}
+  <main>
+    ${renderHero()}
+    ${renderAboutSection()}
+  </main>
+  ${renderFooter()}
+`;
+
+initAnimations();

@@ -1226,14 +1226,6 @@ a {
   font-weight: 600;
 }
 
-.footer-copy {
-  margin: 0;
-}
-
-.footer-credit-link {
-  white-space: nowrap;
-}
-
 .footer-legal {
   display: flex;
   align-items: center;

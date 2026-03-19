@@ -1,3 +1,24 @@
-﻿import { bootApp } from "./app.js";
+﻿import {
+  renderBackdrop,
+  renderHeader,
+  renderContactLoop,
+  renderFormSection,
+  renderFooter,
+  initAnimations,
+} from "../render.js";
 
-bootApp();
+const app = document.querySelector("#app");
+
+app.innerHTML = `
+  ${renderBackdrop()}
+  ${renderHeader()}
+  <main>
+    ${renderContactLoop()}
+    ${renderFormSection({
+      className: "section",
+    })}
+  </main>
+  ${renderFooter()}
+`;
+
+initAnimations();
