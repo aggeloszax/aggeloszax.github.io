@@ -624,12 +624,15 @@ export const renderLegalPage = (pageKey) => {
 
 export const renderFooter = () => {
   const year = new Date().getFullYear();
-  const footerText = site.footer.text.replace(/\b\d{4}\b/, String(year));
+  const footerPrimaryText = `© ${year} Aggelos Zaxariou. All rights reserved by `;
 
   return `
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a href="${site.footer.href}" class="footer-link">${footerText}</a>
+      <p class="footer-copy">
+        <a href="${site.footer.href}" class="footer-link">${footerPrimaryText}</a>
+        <a href="${site.footer.creatorHref}" class="footer-link inline-link footer-credit-link" target="_blank" rel="noreferrer">Antonios Gargallis</a><span aria-hidden="true">.</span>
+      </p>
       <div class="footer-legal" aria-label="${site.footer.legalLabel}">
         ${renderLegalLinks(site.legal.links)}
       </div>

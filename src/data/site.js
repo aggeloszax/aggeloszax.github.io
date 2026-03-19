@@ -259,9 +259,9 @@ export const site = {
               "Messages are delivered through the Formspree contact form service. By submitting the form, you understand that your message is transmitted to that service so it can reach me.",
           },
           {
-            heading: "Your choice",
+            heading: "Copyright notice",
             body:
-              "If you do not want to share personal details, simply do not submit the contact form. You can still browse the site without doing so.",
+              "This portfolio website is copyrighted by <a href=\"https://agargallis.github.io\" target=\"_blank\" rel=\"noreferrer\">agargallis.github.io</a> and Antonios Gargallis, the creator of this portfolio, and is presented with copyright wording adjusted to Aggelos Zaxariou information.",
           },
         ],
       },
@@ -303,6 +303,7 @@ export const site = {
   footer: {
     text: "© 2026 Aggelos Zaxariou. All rights reserved.",
     href: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
+    creatorHref: "https://agargallis.github.io",
     legalLabel: "Legal",
   },
 };
