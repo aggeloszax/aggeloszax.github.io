@@ -26,62 +26,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/src/styles.css" />
+    <script>
+      if (window.location.pathname === "/cookies.html") {
+        window.history.replaceState(null, "", "/cookies/");
+      }
+    </script>
   </head>
   <body>
-    <div class="backdrop" aria-hidden="true">
-      <div class="orb orb-one"></div>
-      <div class="orb orb-two"></div>
-      <div class="orb orb-three"></div>
-      <div class="grid-overlay"></div>
-    </div>
-
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="/" aria-label="Aggelos Zaxariou">
-          <img src="/public/images/AG.png" alt="Aggelos Zaxariou" />
-        </a>
-        <nav class="site-nav">
-          <a class="nav-highlight" href="/">Home</a>
-          <a class="nav-highlight" href="/resume/">Resume</a>
-          <a class="nav-highlight" href="/contact/">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="section legal-page" id="top">
-        <div class="container legal-layout">
-          <div class="legal-hero-card">
-            <p class="about-eyebrow">Legal Pages</p>
-            <h1>Cookie Policy</h1>
-            <p class="legal-intro">This website keeps things simple. No advertising cookies, no analytics trackers, and no third-party profiling cookies are used here.</p>
-            <div class="legal-meta">
-              <span>Last updated</span>
-              <strong>March 18, 2026</strong>
-            </div>
-            <div class="legal-nav" aria-label="Legal Pages">
-              <a class="legal-link is-active" href="/cookies/" aria-label="Cookies"><span class="legal-link-icon">C</span><span>Cookies</span></a>
-              <a class="legal-link" href="/privacy/" aria-label="Privacy"><span class="legal-link-icon">P</span><span>Privacy</span></a>
-              <a class="legal-link" href="/terms/" aria-label="Terms"><span class="legal-link-icon">T</span><span>Terms</span></a>
-            </div>
-          </div>
-          <div class="legal-grid">
-            <article class="card legal-card">
-              <h2>What is used</h2>
-              <p>A single essential preference cookie may be stored to remember whether you accepted or declined the cookie banner. It exists only so the banner does not keep appearing on every visit.</p>
-            </article>
-            <article class="card legal-card">
-              <h2>What is not used</h2>
-              <p>This site does not use analytics, remarketing pixels, behavioral advertising cookies, or social media tracking scripts.</p>
-            </article>
-            <article class="card legal-card">
-              <h2>Contact form</h2>
-              <p>If you choose to send a message through the contact form, the information you enter is submitted only for communication purposes and is not collected automatically while browsing.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
+    <div id="app"></div>
+    <script type="module" src="/src/pages/cookies.js"></script>
   </body>
 </html>
 

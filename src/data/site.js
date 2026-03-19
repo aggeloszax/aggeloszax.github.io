@@ -11,9 +11,9 @@ export const site = {
       url: "/",
       logo: "/public/images/aaa.png",
       sameAs: [
-        "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
-        "https://github.com/aggeloszax",
-        "https://www.instagram.com/_zaxariou",
+        "https://gr.linkedin.com/in/antonis-gargallis-0713ba326",
+        "https://github.com/agargallis",
+        "https://www.instagram.com/agargallis",
       ],
     },
   },
@@ -259,9 +259,9 @@ export const site = {
               "Messages are delivered through the Formspree contact form service. By submitting the form, you understand that your message is transmitted to that service so it can reach me.",
           },
           {
-            heading: "Copyright notice",
+            heading: "Your choice",
             body:
-              "This portfolio website and its original content are owned by Aggelos Zaxariou and may not be copied or republished in misleading ways without permission.",
+              "If you do not want to share personal details, simply do not submit the contact form. You can still browse the site without doing so.",
           },
         ],
       },
@@ -303,8 +303,6 @@ export const site = {
   footer: {
     text: "© 2026 Aggelos Zaxariou. All rights reserved.",
     href: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
-    creatorHref: "https://aggeloszax.github.io/",
-    creatorName: "Aggelos Zaxariou",
     legalLabel: "Legal",
   },
 };
