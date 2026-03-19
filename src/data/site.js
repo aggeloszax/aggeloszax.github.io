@@ -303,7 +303,7 @@ export const site = {
   footer: {
     text: "© 2026 Aggelos Zaxariou. All rights reserved.",
     href: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
-    creatorHref: "https://agargallis.github.io",
+    creatorHref: "https://agargallis.github.io/resume/#projects",
     legalLabel: "Legal",
   },
 };
