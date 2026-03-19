@@ -1,4 +1,4 @@
-﻿import {
+import {
   renderBackdrop,
   renderHeader,
   renderContactLoop,
@@ -7,18 +7,22 @@
   initAnimations,
 } from "../render.js";
 
-const app = document.querySelector("#app");
+export const mountContactPage = () => {
+  document.title = "Contact";
 
-app.innerHTML = `
-  ${renderBackdrop()}
-  ${renderHeader()}
-  <main>
-    ${renderContactLoop()}
-    ${renderFormSection({
-      className: "section",
-    })}
-  </main>
-  ${renderFooter()}
-`;
+  const app = document.querySelector("#app");
 
-initAnimations();
+  app.innerHTML = `
+    ${renderBackdrop()}
+    ${renderHeader()}
+    <main>
+      ${renderContactLoop()}
+      ${renderFormSection({
+        className: "section",
+      })}
+    </main>
+    ${renderFooter()}
+  `;
+
+  initAnimations();
+};

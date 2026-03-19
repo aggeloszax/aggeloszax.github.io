@@ -625,11 +625,17 @@ export const renderLegalPage = (pageKey) => {
 export const renderFooter = () => {
   const year = new Date().getFullYear();
   const footerText = site.footer.text.replace(/\b\d{4}\b/, String(year));
+  const footerCreator = site.footer.creator
+    ? `<a href="${site.footer.creatorHref}" target="_blank" rel="noreferrer" class="footer-link footer-link-creator">${site.footer.creator}</a>.`
+    : "";
 
   return `
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a href="${site.footer.href}" class="footer-link">${footerText}</a>
+      <p class="footer-link">
+        ${footerText}${footerCreator ? "&nbsp;" : ""}
+        ${footerCreator}
+      </p>
       <div class="footer-legal" aria-label="${site.footer.legalLabel}">
         ${renderLegalLinks(site.legal.links)}
       </div>

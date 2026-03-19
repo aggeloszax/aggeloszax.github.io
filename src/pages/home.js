@@ -1,4 +1,4 @@
-﻿import {
+import {
   renderBackdrop,
   renderHeader,
   renderHero,
@@ -7,16 +7,20 @@
   initAnimations,
 } from "../render.js";
 
-const app = document.querySelector("#app");
+export const mountHomePage = () => {
+  document.title = "Aggelos Zaxariou";
 
-app.innerHTML = `
-  ${renderBackdrop()}
-  ${renderHeader()}
-  <main>
-    ${renderHero()}
-    ${renderAboutSection()}
-  </main>
-  ${renderFooter()}
-`;
+  const app = document.querySelector("#app");
 
-initAnimations();
+  app.innerHTML = `
+    ${renderBackdrop()}
+    ${renderHeader()}
+    <main>
+      ${renderHero()}
+      ${renderAboutSection()}
+    </main>
+    ${renderFooter()}
+  `;
+
+  initAnimations();
+};

@@ -1,3 +1,3 @@
 import { mountLegalPage } from "./legal.js";
 
-mountLegalPage("terms");
+export const mountTermsPage = () => mountLegalPage("terms");

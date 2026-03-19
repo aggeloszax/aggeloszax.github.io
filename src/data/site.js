@@ -287,9 +287,9 @@ export const site = {
               "Unless otherwise stated, the design, text, and original portfolio content on this website belong to Aggelos Zaxariou and should not be copied or reused in misleading ways.",
           },
           {
-            heading: "External links",
+            heading: "Copyright attribution",
             body:
-              "Some sections link to third-party websites. I am not responsible for their content, security, or privacy practices once you leave this site.",
+              "This site is copyrighted under <a href=\"https://agargallis.github.io\" target=\"_blank\" rel=\"noreferrer\">agargallis.github.io</a>, Antonios Gargallis, am the creator and I agree to keep this portfolio under copyright protection.",
           },
           {
             heading: "Contact form use",
@@ -301,9 +301,12 @@ export const site = {
     ],
   },
   footer: {
-    text: "© 2026 Aggelos Zaxariou. All rights reserved.",
+    text: "© 2026 Aggelos Zaxariou. All rights reserved by",
+    creator: "Antonios Gargallis",
+    creatorHref: "https://agargallis.github.io/resume/#projects",
     href: "https://www.linkedin.com/in/aggelos-zachariou-3ba870348/",
     legalLabel: "Legal",
   },
 };
+
 

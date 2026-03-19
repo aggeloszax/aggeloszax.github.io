@@ -1226,6 +1226,15 @@ a {
   font-weight: 600;
 }
 
+.footer-link-creator {
+  color: #a91106;
+}
+
+.footer-link-creator:hover,
+.footer-link-creator:focus-visible {
+  text-decoration-color: #a91106;
+}
+
 .footer-legal {
   display: flex;
   align-items: center;

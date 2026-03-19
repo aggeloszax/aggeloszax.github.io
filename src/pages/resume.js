@@ -1,4 +1,4 @@
-﻿import {
+import {
   renderBackdrop,
   renderHeader,
   renderProjectsSection,
@@ -9,18 +9,22 @@
   initAnimations,
 } from "../render.js";
 
-const app = document.querySelector("#app");
+export const mountResumePage = () => {
+  document.title = "Resume";
 
-app.innerHTML = `
-  ${renderBackdrop()}
-  ${renderHeader()}
-  <main>
-    ${renderEducationSection()}
-    ${renderLanguagesSection()}
-    ${renderCertificationsSection()}
-    ${renderProjectsSection()}
-  </main>
-  ${renderFooter()}
-`;
+  const app = document.querySelector("#app");
 
-initAnimations();
+  app.innerHTML = `
+    ${renderBackdrop()}
+    ${renderHeader()}
+    <main>
+      ${renderEducationSection()}
+      ${renderLanguagesSection()}
+      ${renderCertificationsSection()}
+      ${renderProjectsSection()}
+    </main>
+    ${renderFooter()}
+  `;
+
+  initAnimations();
+};
