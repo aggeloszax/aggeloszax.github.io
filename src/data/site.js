@@ -289,7 +289,7 @@ export const site = {
           {
             heading: "Copyright attribution",
             body:
-              "This site is copyrighted under <a href=\"https://agargallis.github.io\" target=\"_blank\" rel=\"noreferrer\">agargallis.github.io</a>, Antonios Gargallis, am the creator and I agree to keep this portfolio under copyright protection.",
+              "This site is copyrighted under <a href=\"https://agargallis.github.io\" target=\"_blank\" rel=\"noreferrer\">agargallis.github.io</a>, Antonios Gargallis, I am the creator and I agree to keep this portfolio under copyright protection.",
           },
           {
             heading: "Contact form use",
