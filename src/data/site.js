@@ -142,7 +142,7 @@ export const site = {
         period: "SEP 2024 - TILL NOW",
         program: "Department of Statistics and Insurance Science",
         description:
-          "The Department of Statistics and Insurance Science at the University of Piraeus (UNIPI) is a prominent academic and research department specializing in statistics, actuarial science, insurance, and risk analysis. It provides a comprehensive curriculum that combines theoretical foundations with practical applications in probability, statistical inference, financial mathematics, insurance modeling, and decision-making under uncertainty, while fostering research activity and collaboration with academic and industry partners.",
+          "Current Grade: 7/10",
         locationLabel: "Piraeus, Greece",
         locationHref: "https://shorturl.at/Gpy8K",
         icon: { href: "https://www.stat.uoa.gr/front", src: "/public/images/18.png" },
@@ -152,7 +152,7 @@ export const site = {
         period: "SEP 2021 - JUN 2024",
         program: "General Public High School",
         description:
-          "The 9th General Lyceum of Peristeri is a public upper secondary school located in the municipality of Peristeri, Athens. It provides a general education curriculum aimed at preparing students for university entrance, while also encouraging participation in cultural, scientific, and social activities.",
+          "Grade Finished: 18.5/20",
         locationLabel: "Peristeri, Greece",
         locationHref: "https://maps.app.goo.gl/yBFTra3XTEwgzG8n9",
         icon: { href: "https://9lyk-perist.att.sch.gr/", src: "/public/images/19.png" },
