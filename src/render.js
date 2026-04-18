@@ -641,6 +641,12 @@ export const renderFooter = () => {
       </div>
     </div>
   </footer>
+  <button class="back-to-top" aria-label="Back to top" data-back-to-top hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5"></path>
+      <path d="M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
   <aside class="cookie-banner" data-cookie-banner hidden role="dialog" aria-live="polite" aria-label="${site.cookieBanner.title}">
     <div class="cookie-banner-main">
       ${renderCookieBannerIcon()}
@@ -813,6 +819,25 @@ export const initAnimations = () => {
       }
     }
   };
+
+  const backToTopBtn = document.querySelector("[data-back-to-top]");
+
+  if (backToTopBtn && !backToTopBtn.dataset.bound) {
+    backToTopBtn.dataset.bound = "true";
+
+    const onScroll = () => {
+      const visible = window.scrollY > 300;
+      backToTopBtn.hidden = !visible;
+      backToTopBtn.classList.toggle("is-visible", visible);
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 
   if (!document.body.dataset.formHandler) {
     document.body.dataset.formHandler = "true";
