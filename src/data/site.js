@@ -72,6 +72,10 @@ export const site = {
         href: "https://fuzhou-garden.vercel.app/",
         icon: "/public/images/fuzhou-garden-logo.jpg",
       },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
     ],
   },
   certifications: {
