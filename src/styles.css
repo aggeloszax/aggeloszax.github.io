@@ -532,6 +532,13 @@ a {
   width: 32px;
 }
 
+.project-card .icon-shell img {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .cert-grid {
   display: flex;
   gap: 24px;

@@ -67,11 +67,11 @@ export const site = {
   projects: {
     title: "Projects",
     items: [
-      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
-      { title: "Soon!", href: "#", icon: "/public/images/AG.png" },
+      {
+        title: "Fuzhou Garden",
+        href: "https://fuzhou-garden.vercel.app/",
+        icon: "/public/images/fuzhou-garden-logo.jpg",
+      },
     ],
   },
   certifications: {
