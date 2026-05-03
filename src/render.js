@@ -124,6 +124,28 @@ export const renderBackdrop = () => `
   </div>
 `;
 
+export const renderIntroLoader = () => `
+  <div class="intro-loader" data-intro-loader role="status" aria-live="polite" aria-label="Loading page">
+    <div class="intro-loader-backdrop" aria-hidden="true">
+      <div class="intro-loader-orb intro-loader-orb-one"></div>
+      <div class="intro-loader-orb intro-loader-orb-two"></div>
+      <div class="intro-loader-orb intro-loader-orb-three"></div>
+      <div class="intro-loader-grid"></div>
+    </div>
+    <div class="intro-loader-panel">
+      <div class="intro-loader-logo-wrap">
+        <img class="intro-loader-logo" src="${site.header.logo}" alt="${site.meta.description}" />
+      </div>
+      <p class="intro-loader-title">Welcome to my CV!</p>
+      <p class="intro-loader-subtitle">Loading...</p>
+      <div class="intro-loader-progress" aria-hidden="true">
+        <div class="intro-loader-progress-fill" data-loader-fill></div>
+      </div>
+      <p class="intro-loader-percent" data-loader-percent>1%</p>
+    </div>
+  </div>
+`;
+
 const renderSocials = (socials) =>
   socials
     .map(

@@ -4,6 +4,7 @@ import { mountContactPage } from "./pages/contact.js";
 import { mountCookiesPage } from "./pages/cookies.js";
 import { mountPrivacyPage } from "./pages/privacy.js";
 import { mountTermsPage } from "./pages/terms.js";
+import { renderIntroLoader } from "./render.js";
 
 const routes = {
   home: {
@@ -65,6 +66,83 @@ const getPageKeyFromPath = (path) => {
 
 const getCanonicalPath = (key) => (key === "home" ? "/" : `/${key}/`);
 
+const ensureIntroLoader = () => {
+  let loader = document.querySelector("[data-intro-loader]");
+
+  if (!loader) {
+    document.body.insertAdjacentHTML("beforeend", renderIntroLoader());
+    loader = document.querySelector("[data-intro-loader]");
+  }
+
+  return loader;
+};
+
+const runIntroLoader = () => {
+  const loader = ensureIntroLoader();
+  const fill = loader?.querySelector("[data-loader-fill]");
+  const percent = loader?.querySelector("[data-loader-percent]");
+
+  if (!loader || !fill || !percent) {
+    return;
+  }
+
+  document.body.classList.add("is-intro-loading");
+
+  let current = 1;
+  let pageLoaded = document.readyState === "complete";
+  let finished = false;
+
+  const paint = (value) => {
+    fill.style.width = `${value}%`;
+    percent.textContent = `${value}%`;
+  };
+
+  const complete = () => {
+    if (finished) {
+      return;
+    }
+
+    finished = true;
+    paint(100);
+    loader.classList.add("is-complete");
+
+    window.setTimeout(() => {
+      document.body.classList.remove("is-intro-loading");
+      loader.remove();
+    }, 650);
+  };
+
+  const tick = () => {
+    const limit = pageLoaded ? 100 : 99;
+
+    if (current < limit) {
+      current += 1;
+      paint(current);
+    }
+
+    if (pageLoaded && current >= 100) {
+      window.clearInterval(intervalId);
+      complete();
+    }
+  };
+
+  paint(current);
+
+  const intervalId = window.setInterval(tick, 24);
+
+  const markLoaded = () => {
+    pageLoaded = true;
+  };
+
+  if (!pageLoaded) {
+    window.addEventListener("load", markLoaded, { once: true });
+  }
+
+  window.setTimeout(() => {
+    pageLoaded = true;
+  }, 2400);
+};
+
 const mountCurrentRoute = (path = window.location.pathname) => {
   const key = getPageKeyFromPath(path);
   const route = routes[key] || routes.home;
@@ -118,3 +196,4 @@ document.body.addEventListener("click", handleLinkClick);
 window.addEventListener("popstate", () => mountCurrentRoute(window.location.pathname));
 
 mountCurrentRoute(window.location.pathname);
+runIntroLoader();
