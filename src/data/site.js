@@ -56,7 +56,7 @@ export const site = {
     },
   },
   about: {
-    title: "About Me",
+    title: "Few things about me",
     intro:
       "I was born in 2006 in Athens. I successfully completed my high school education at the 9th General Lyceum of Peristeri in June of 2024, and I am currently pursuing my studies in the Department of Statistics and Insurance Science at the University of Piraeus. Parallel to my studies, I am working as a Statistician for Basketaki The League, where I apply data tracking and analysis in a fast-paced sports environment. I am also a fitness enthusiast, dedicated to personal growth and discipline.",
     highlights: [
