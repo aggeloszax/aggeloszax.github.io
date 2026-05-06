@@ -363,22 +363,24 @@ export const renderAboutSection = () => `
   <section class="section about" id="about">
     <div class="container">
       <div class="about-card reveal">
-        <div class="about-copy">
-          <p class="about-eyebrow">AGGELOS ZAXARIOU</p>
-          <h2>${site.about.title}</h2>
-          <p>${site.about.intro}</p>
-        </div>
-        <div class="about-highlights">
-          ${site.about.highlights
-            .map(
-              (item) => `
-              <div class="highlight">
-                <span class="highlight-dot"></span>
-                <span>${item}</span>
-              </div>
-            `
-            )
-            .join("")}
+        <div class="about-shell">
+          <div class="about-copy">
+            <p class="about-eyebrow">AGGELOS ZAXARIOU</p>
+            <h2>${site.about.title}</h2>
+            <p>${site.about.intro}</p>
+          </div>
+          <div class="about-highlights">
+            ${site.about.highlights
+              .map(
+                (item) => `
+                <div class="highlight">
+                  <span class="highlight-dot"></span>
+                  <span>${item}</span>
+                </div>
+              `
+              )
+              .join("")}
+          </div>
         </div>
       </div>
     </div>
