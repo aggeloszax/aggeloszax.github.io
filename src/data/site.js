@@ -73,30 +73,10 @@ export const site = {
         icon: "/public/images/fuzhou-garden-logo.jpg",
       },
       {
-        title: "Fuzhou Garden",
-        href: "https://fuzhou-garden.vercel.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
-      },
-      {
-        title: "Fuzhou Garden",
-        href: "https://fuzhou-garden.vercel.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
-      },
-      {
-        title: "Fuzhou Garden",
-        href: "https://fuzhou-garden.vercel.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
-      },
-      {
-        title: "Fuzhou Garden",
-        href: "https://fuzhou-garden.vercel.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
-      },
-      {
         title: "Twins Bros",
         href: "https://twins-bros.vercel.app/book",
         icon: "/public/images/8.png",
-      },
+      }
     ],
   },
   certifications: {
