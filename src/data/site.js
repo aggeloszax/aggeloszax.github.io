@@ -78,26 +78,6 @@ export const site = {
         icon: "/public/images/8.png",
       },
       {
-        title: "Fuzhou Garden",
-        href: "https://fuzhou-garden.vercel.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
-      },
-      {
-        title: "Twins Bros",
-        href: "https://twins-bros.vercel.app/book",
-        icon: "/public/images/8.png",
-      },
-      {
-        title: "Fuzhou Garden",
-        href: "https://fuzhou-garden.vercel.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
-      },
-      {
-        title: "Twins Bros",
-        href: "https://twins-bros.vercel.app/book",
-        icon: "/public/images/8.png",
-      },
-      {
         title: "automated seassonal callendar",
         href: "https://sesson2026.netlify.app/",
         icon: "/public/images/fuzhou-garden-logo.jpg",
