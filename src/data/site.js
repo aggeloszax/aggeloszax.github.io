@@ -78,9 +78,9 @@ export const site = {
         icon: "/public/images/8.png",
       },
       {
-        title: "automated seassonal callendar",
+        title: "Automated Summer Money Calendar",
         href: "https://sesson2026.netlify.app/",
-        icon: "/public/images/fuzhou-garden-logo.jpg",
+        icon: "/public/images/sc.png",
       },
     ],
   },
