@@ -82,6 +82,11 @@ export const site = {
         href: "https://sesson2026.netlify.app/",
         icon: "/public/images/sc.png",
       },
+      {
+        title: "Masao",
+        href: "https://masao-project.vercel.app/",
+        icon: "/public/images/masao.png",
+      },
     ],
   },
   certifications: {
