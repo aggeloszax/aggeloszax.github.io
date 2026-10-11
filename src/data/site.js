@@ -68,6 +68,11 @@ export const site = {
     title: "Projects",
     items: [
       {
+        title: "Masao",
+        href: "https://masao-project.vercel.app/",
+        icon: "/public/images/masao.png",
+      },
+      {
         title: "Fuzhou Garden",
         href: "https://fuzhou-garden.vercel.app/",
         icon: "/public/images/fuzhou-garden-logo.jpg",
@@ -81,11 +86,6 @@ export const site = {
         title: "Automated Summer Money Calendar",
         href: "https://sesson2026.netlify.app/",
         icon: "/public/images/sc.png",
-      },
-      {
-        title: "Masao",
-        href: "https://masao-project.vercel.app/",
-        icon: "/public/images/masao.png",
       },
     ],
   },
@@ -137,11 +137,6 @@ export const site = {
     ],
     work: [
       {
-        title: "Statistics Specialist",
-        period: "NOV 2025 - JUNE 2026",
-        description: "Basketaki The League",
-      },
-      {
         title: "Project Specialist",
         period: "OCT 2026 - TILL NOW",
         description: "Logitel",
@@ -150,6 +145,11 @@ export const site = {
           alt: "Logitel",
           href: "https://www.logitel.gr/",
         },
+      },
+      {
+        title: "Statistics Specialist",
+        period: "NOV 2025 - JUNE 2026",
+        description: "Basketaki The League",
       },
 
     ],
