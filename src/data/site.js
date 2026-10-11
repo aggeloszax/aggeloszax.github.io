@@ -138,8 +138,18 @@ export const site = {
     work: [
       {
         title: "Statistics Specialist",
-        period: "NOV 2025 - TILL NOW",
+        period: "NOV 2025 - JUNE 2026",
         description: "Basketaki The League",
+      },
+      {
+        title: "Project Specialist",
+        period: "OCT 2026 - TILL NOW",
+        description: "Logitel",
+        image: {
+          src: "/public/images/logitel.svg",
+          alt: "Logitel",
+          href: "https://www.logitel.gr/",
+        },
       },
 
     ],
